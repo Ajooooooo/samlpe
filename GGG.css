@@ -1,0 +1,278 @@
+<style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e9e7e7;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .poster {
+            width: 700px;
+            height: 980px;
+            background-color: white;
+            position: relative;
+            padding: 38px;
+            overflow: hidden;
+            box-shadow: 12px 15px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .header {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .website {
+            font-size: 12px;
+            color: #888888;
+            font-weight: 400;
+        }
+
+        .brand {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            color: #222222;
+        }
+
+        .mosaic {
+            width: 100%;
+            height: 625px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .tile {
+            background-repeat: no-repeat;
+            background-position-x: 75%;
+            background-position-y: 75%;
+            background-size: cover;
+            overflow: hidden;
+            background-color: #dddddd;
+        }
+
+        .top-row {
+            display: flex;
+            gap: 10px;
+            height: 310px;
+        }
+
+        .top-column {
+            width: 88px;
+            height: 310px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .top-column .tile {
+       	    flex: 1;
+        }
+
+        .top-center {
+            width: 195px;
+            height: 310px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .top-center-large {
+            height: 210px;
+        }
+
+        .top-center-small {
+            height: 90px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-center-small .tile {
+            flex: 1;
+        }
+
+        .top-right {
+            width: 200px;
+            height: 310px;
+        }
+
+        .bottom-row {
+            display: flex;
+            gap: 10px;
+            height: 300px;
+        }
+
+        .bottom-left {
+            width: 391px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bottom-top {
+            height: 300px;
+	    width: 300px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .bottom-top .tile {
+            display: flex;
+            width: 100px;
+        }
+
+        .bottom-large {
+	    height: 500px;
+	    width: 300px;
+            display: flex;
+            flex: 1;
+        }
+
+        .bottom-middle {
+            width: 88px;
+            height: 500px;
+        }
+
+        .bottom-right {
+            width: 300px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bottom-right-small {
+            height: 60px;
+	    width: 150px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .bottom-right-small .tile {
+            height: 60px;
+	    width: 150px;
+            display: flex;
+	    flex: 1;
+	    gap: 10px;
+        }
+
+        .bottom-right-large {
+            flex: 1;
+	    gap: 10px;
+        }
+
+        .title-band {
+            position: absolute;
+            top: 345px;
+            left: 0;
+            width: 100%;
+            height: 155px;
+            background-color: white;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            color: #222222;
+            text-align: center;
+        }
+
+        .subtitle {
+            margin-top: 18px;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #222222;
+            text-align: center;
+        }
+
+        .footer {
+            position: absolute;
+            left: 38px;
+            right: 38px;
+            bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #555555;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .image-1 {
+            background-image: url("miming1.jpg");
+        }
+
+        .image-2 {
+            background-image: url("miming2.jpg");
+        }
+
+        .image-3 {
+            background-image: url("miming3.jpg");
+        }
+
+        .image-4 {
+            background-image: url("miming4.jpg");
+        }
+
+        .image-5 {
+            background-image: url("miming5.jpg");
+        }
+
+        .image-6 {
+            background-image: url("miming6.jpg");
+        }
+
+	.image-7 {
+            background-image: url("miming6.jpg");
+        }
+
+	.image-8 {
+            background-image: url("miming5.jpg");
+        }
+
+        .image-9 {
+            background-image: url("miming4.jpg");
+        }
+
+
+        .center-image {
+            background-position-x: 50%;
+            background-position-y: 50%;
+        }
+
+</style>
